@@ -1,16 +1,23 @@
 <html>
 <header>
     <meta charset="UTF-8" />
-    <title>My Portfolio Website</title>
+    <title>Ujjwal's Portfolio Website</title>
     <link type="text/css" rel="stylesheet" href="static/styles/bulma.css" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script src="static/js/jquery-3.3.1.slim.js"></script>
 </header>
-
+<style> 
+.column {
+  display: flex;
+}
+</style> 
 <body>
-    <nav class="navbar is-transparent">
+    <nav class="navbar is-transparent is-dark">
         <div class="navbar-brand">
-            <a class="navbar-item" href="https://bulma.io">
-                <p class="has-text-weight-bold is-uppercase">INSERT LOGO</p>
+            <a class="navbar-item" href="#">
+                <span class="icon is-medium" style="float:right;">
+                    <i class="fa-2x far fa-lightbulb" style="color: gold"></i>
+                </span>
             </a>
             <div class="navbar-burger burger" data-target="navbarExampleTransparentExample">
                 <span></span>
@@ -33,7 +40,22 @@
             </div>
         </div>
     </nav>
-    <section class="hero is-link is-bold" id="mlprojects">
+
+    <div class="modal" id="seefood-modal">
+            <div class="modal-background"></div>
+            <div class="modal-card">
+              <header class="modal-card-head">
+                <p class="modal-card-title">SeeFood - Food Image Classifier</p>
+              </header>
+              <section class="modal-card-body">
+                
+              </section>
+              <footer class="modal-card-foot">
+                <button class="button" id="seefood-modal-cancel">Cancel</button>
+              </footer>
+            </div>
+          </div>
+    <section class="hero is-light" id="mlprojects">
         <div class="hero-body">
             <div class="container">
                 <h1 class="title">
@@ -63,7 +85,8 @@
                                 <p class="subtitle is-6">Food Image Recognizer
                                     <br>
                                     <br>
-                                    <a class="button is-link" href="https://github.com/ujjusinghania/SeeFood" target="_blank">Code</a>
+                                    <a class="button is-link"  href="#"  target="_blank">Code</a>
+                                    <a class="button is-dark"  id="seefood-modal-activate"  target="_blank">More</a>
                                     <span class="icon is-medium" style="float:right;">
                                         <i class="fab fa-2x fa-css3"></i>
                                     </span>
@@ -169,7 +192,7 @@
         </div>
     </div>
 
-    <section class="hero is-info is-bold" id="mobileprojects">
+    <section class="hero is-light" id="mobileprojects">
         <div class="hero-body">
             <div class="container">
                 <h1 class="title">
@@ -260,7 +283,7 @@
         </div>
     </div>
 
-    <section class="hero is-primary is-bold" id="webprojects">
+    <section class="hero is-light" id="webprojects">
         <div class="hero-body">
             <div class="container">
                 <h1 class="title">
@@ -344,7 +367,7 @@
                         <div class="content">
                             A messaging application I built with my co-peers as a project for my databases class. It had a number of features like a
                             personalized color picker, a versatile content viewer, and ability to have custom groups.The
-                            front-end was created using HTML, CSS and Python, whereas, the back-end was a MySQL database.
+                            front-end was created using HTML, CSS and Python, and the back-end was a MySQL database.
                         </div>
                     </div>
                 </div>
@@ -356,18 +379,28 @@
         </div>
     </div>
 </body>
+
 <footer class="footer">
     <div class="container">
         <div class="content has-text-centered">
             <p>
-                Made by
-                <a href="#">Ujjwal Singhania</a>. Images from
-                <a href="unsplash.com">Unsplash</a>
+                Made by Ujjwal Singhania. 
+                Images from <a href="unsplash.com">Unsplash</a>
             </p>
         </div>
     </div>
 </footer>
 
 <script defer src="https://use.fontawesome.com/releases/v5.0.7/js/all.js"></script>
+
+<script>
+    $("#seefood-modal-activate").click(function() {
+        $("#seefood-modal").addClass("is-active");
+    });
+
+    $("#seefood-modal-cancel").click(function() {
+        $("#seefood-modal").removeClass("is-active");
+    });
+</script>
 
 </html>
