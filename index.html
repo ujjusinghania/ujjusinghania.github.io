@@ -1,4 +1,4 @@
-<html>
+<html> 
 <header>
     <meta charset="UTF-8" />
     <title>Ujjwal's Portfolio Website</title>
@@ -6,17 +6,18 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <script src="static/js/jquery-3.3.1.slim.js"></script>
 </header>
-<style> 
-.column {
-  display: flex;
-}
-</style> 
+<style>
+    .column {
+        display: flex;
+    }
+</style>
+
 <body>
-    <nav class="navbar is-transparent is-dark">
+    <nav class="navbar is-transparent is-light is-fixed-bottom">
         <div class="navbar-brand">
             <a class="navbar-item" href="#">
                 <span class="icon is-medium" style="float:right;">
-                    <i class="fa-2x far fa-lightbulb" style="color: gold"></i>
+                    <i class="fa-2x far fa-lightbulb" style="color: black"></i>
                 </span>
             </a>
             <div class="navbar-burger burger" data-target="navbarExampleTransparentExample">
@@ -28,33 +29,48 @@
 
         <div id="navbarExampleTransparentExample" class="navbar-menu">
             <div class="navbar-end">
-                <a class="navbar-item" href="https://bulma.io/">
+                <a class="navbar-item" href="https://ujjusinghania.github.io/">
                     Projects
                 </a>
-                <a class="navbar-item" href="https://bulma.io/">
+                <a class="navbar-item" href="#">
                     Blog
                 </a>
-                <a class="navbar-item" href="https://bulma.io/">
+                <a class="navbar-item" href="#">
                     Resume
                 </a>
             </div>
         </div>
     </nav>
 
-    <div class="modal" id="seefood-modal">
-            <div class="modal-background"></div>
-            <div class="modal-card">
-              <header class="modal-card-head">
-                <p class="modal-card-title">SeeFood - Food Image Classifier</p>
-              </header>
-              <section class="modal-card-body">
-                
-              </section>
-              <footer class="modal-card-foot">
-                <button class="button" id="seefood-modal-cancel">Cancel</button>
-              </footer>
+    <!-- <div class="modal" id="seefood-modal">
+        <div class="modal-background"></div>
+        <div class="modal-content" style="background: aliceblue">
+            <div class="tile is-ancestor">
+                <div class="tile is-parent">
+                    <article class="tile is-child box is-light">
+                        <p class="title">Hello World</p>
+                        <p class="subtitle">What is up?</p>
+                    </article>
+                </div>
+                <div class="tile is-parent">
+                    <article class="tile is-child box">
+                        <p class="title">Foo</p>
+                        <p class="subtitle">Bar</p>
+                    </article>
+                </div>
+                <div class="tile is-parent">
+                    <article class="tile is-child box">
+                        <p class="title">Third column</p>
+                        <p class="subtitle">With some content</p>
+                        <div class="content">
+                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin ornare magna eros, eu pellentesque
+                                tortor vestibulum ut. Maecenas non massa sem. Etiam finibus odio quis feugiat facilisis.</p>
+                        </div>
+                    </article>
+                </div>
             </div>
-          </div>
+        </div>
+    </div> -->
     <section class="hero is-light" id="mlprojects">
         <div class="hero-body">
             <div class="container">
@@ -85,8 +101,8 @@
                                 <p class="subtitle is-6">Food Image Recognizer
                                     <br>
                                     <br>
-                                    <a class="button is-link"  href="#"  target="_blank">Code</a>
-                                    <a class="button is-dark"  id="seefood-modal-activate"  target="_blank">More</a>
+                                    <a class="button is-link" href="#" target="_blank">Code</a>
+                                    <!-- <a class="button is-dark" id="seefood-modal-activate" target="_blank">More</a> -->
                                     <span class="icon is-medium" style="float:right;">
                                         <i class="fab fa-2x fa-css3"></i>
                                     </span>
@@ -147,8 +163,8 @@
 
                         <div class="content">
                             A twitter sentiment analyzer that used support vector machines and natural language processing
-                            <strong>(scikit-learn, and NLTK framework)</strong>. Used the word frequency map method to build vectors (after stopword removal, POS tagging and spelling correction)
-                            and the one versus all SVM method.
+                            <strong>(scikit-learn, and NLTK framework)</strong>. Used the word frequency map method to build vectors
+                            (after stopword removal, POS tagging and spelling correction) and the one versus all SVM method.
 
                         </div>
                     </div>
@@ -173,14 +189,17 @@
                                     <a class="button is-link" href="https://github.com/ujjusinghania/TextClassifier" target="_blank">Code</a>
                                     <span class="icon is-medium" style="float:right;">
                                         <i class="fab fa-2x fa-java"></i>
+                                    </span>
                                 </p>
                             </div>
                         </div>
 
                         <div class="content">
                             A document categorizer that uses support vector machines and neural networks
-                            <strong>(used Neuroph, and libsvm framework)</strong>. Used the word frequency map method to build vectors (after stopword removal, and special character removal)
-                            and the one versus all SVM method. On the other hand, a multi-perceptron neural network was used. Achieved a 100% accuracy on BBC and 89% on the Heckyl Database.
+                            <strong>(used Neuroph, and libsvm framework)</strong>. Used the word frequency map method to build vectors
+                            (after stopword removal, and special character removal) and the one versus all SVM method. On
+                            the other hand, a multi-perceptron neural network was used. Achieved a 100% accuracy on BBC and
+                            89% on the Heckyl Database.
 
                         </div>
                     </div>
@@ -384,8 +403,8 @@
     <div class="container">
         <div class="content has-text-centered">
             <p>
-                Made by Ujjwal Singhania. 
-                Images from <a href="unsplash.com">Unsplash</a>
+                Made by Ujjwal Singhania. Images from
+                <a href="unsplash.com">Unsplash</a>
             </p>
         </div>
     </div>
@@ -394,11 +413,11 @@
 <script defer src="https://use.fontawesome.com/releases/v5.0.7/js/all.js"></script>
 
 <script>
-    $("#seefood-modal-activate").click(function() {
+    $("#seefood-modal-activate").click(function () {
         $("#seefood-modal").addClass("is-active");
     });
 
-    $("#seefood-modal-cancel").click(function() {
+    $("#seefood-modal-cancel").click(function () {
         $("#seefood-modal").removeClass("is-active");
     });
 </script>
