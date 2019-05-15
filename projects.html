@@ -1,0 +1,534 @@
+<html>
+<header>
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-84265081-3"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag() { dataLayer.push(arguments); }
+        gtag('js', new Date());
+
+        gtag('config', 'UA-84265081-3');
+    </script>
+
+    <meta charset="UTF-8" />
+    <title>Ujjwal's Portfolio Website - Projects</title>
+    <link type="text/css" rel="stylesheet" href="static/styles/bulma.css" />
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.5.0/css/solid.css" integrity="sha384-rdyFrfAIC05c5ph7BKz3l5NG5yEottvO/DQ0dCrwD8gzeQDjYBHNr1ucUpQuljos"
+        crossorigin="anonymous">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.5.0/css/regular.css" integrity="sha384-z3ccjLyn+akM2DtvRQCXJwvT5bGZsspS4uptQKNXNg778nyzvdMqiGcqHVGiAUyY"
+        crossorigin="anonymous">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.5.0/css/brands.css" integrity="sha384-QT2Z8ljl3UupqMtQNmPyhSPO/d5qbrzWmFxJqmY7tqoTuT2YrQLEqzvVOP2cT5XW"
+        crossorigin="anonymous">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.5.0/css/fontawesome.css" integrity="sha384-u5J7JghGz0qUrmEsWzBQkfvc8nK3fUT7DCaQzNQ+q4oEXhGSx+P2OqjWsfIRB8QT"
+        crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdn.rawgit.com/konpa/devicon/df6431e323547add1b4cf45992913f15286456d3/devicon.min.css">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script src="static/js/jquery-3.3.1.slim.js"></script>
+</header>
+<style>
+    .column {
+        display: flex;
+    }
+
+    .icon-color {
+        color: black;
+    }
+</style>
+
+<body>
+    <nav class="navbar is-transparent is-light is-fixed-top">
+        <div class="navbar-brand">
+            <a class="navbar-item" href="https://github.com/ujjusinghania" target="_blank">
+                <span class="icon is-medium icon-color" style="float:right;">
+                    <i class="fa-2x fab fa-github-square"></i>
+                </span>
+            </a>
+            <a class="navbar-item" href="https://twitter.com/ujjusinghania" target="_blank">
+                <span class="icon is-medium icon-color" style="float:right;">
+                    <i class="fa-2x fab fa-twitter-square"></i>
+                </span>
+            </a>
+            <a class="navbar-item" href="https://www.linkedin.com/in/ujjwal-s-51156990/" target="_blank">
+                <span class="icon is-medium icon-color" style="float:right;">
+                    <i class="fa-2x fab fa-linkedin"></i>
+                </span>
+            </a>
+            <div class="navbar-burger burger nav-toggle" data-target="navbarExampleTransparentExample">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </div>
+
+        <div id="navbarExampleTransparentExample" class="navbar-menu">
+            <div class="navbar-end">
+                <a class="navbar-item" href="https://ujjusinghania.github.io/">
+                    About Me
+                </a>
+                <a class="navbar-item" href="https://ujjusinghania.github.io/projects">
+                    Projects
+                </a>
+                <a class="navbar-item" href="https://drive.google.com/file/d/1weML6QgSUXp1N8o55htLXhrF7cPfhVAt/view?usp=sharing"
+                    target="_blank">
+                    Resume
+                </a>
+            </div>
+        </div>
+    </nav>
+
+    <!-- <div class="modal" id="seefood-modal">
+        <div class="modal-background"></div>
+        <div class="modal-content" style="background: aliceblue">
+            <div class="tile is-ancestor">
+                <div class="tile is-parent">
+                    <article class="tile is-child box is-light">
+                        <p class="title">Hello World</p>
+                        <p class="subtitle">What is up?</p>
+                    </article>
+                </div>
+                <div class="tile is-parent">
+                    <article class="tile is-child box">
+                        <p class="title">Foo</p>
+                        <p class="subtitle">Bar</p>
+                    </article>
+                </div>
+                <div class="tile is-parent">
+                    <article class="tile is-child box">
+                        <p class="title">Third column</p>
+                        <p class="subtitle">With some content</p>
+                        <div class="content">
+                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin ornare magna eros, eu pellentesque
+                                tortor vestibulum ut. Maecenas non massa sem. Etiam finibus odio quis feugiat facilisis.</p>
+                        </div>
+                    </article>
+                </div>
+            </div>
+        </div>
+    </div> -->
+
+    <section class="hero is-light" id="mlprojects">
+        <div class="hero-body" style="margin-top: 5%">
+            <div class="container">
+                <h1 class="title">
+                    Machine Learning Applications
+                </h1>
+                <h2 class="subtitle">
+                    Applications that use machine learning as part of their core functionality.
+                </h2>
+            </div>
+        </div>
+    </section>
+    <div class="container is-fluid" style="padding: 32px;">
+        <div class="columns">
+            <div class="column">
+                <div class="card">
+                    <div class="card-image">
+                        <figure class="image is-1by1">
+                            <img src="static/imgs/SeeFood.jpg" alt="Placeholder image">
+                        </figure>
+                    </div>
+                    <div class="card-content">
+                        <div class="media">
+                            <div class="media-content">
+                                <p class="title is-4">SeeFood
+
+                                </p>
+                                <p class="subtitle is-6">Food Image Recognizer
+                                    <br>
+                                    <br>
+                                    <a class="button is-link" href="#" target="_blank">Code</a>
+                                    <!-- <a class="button is-dark" id="seefood-modal-activate" target="_blank">More</a> -->
+                                    <span class="icon is-medium" style="float:right;">
+                                        <i class="devicon-python-plain colored" style="font-size: 2rem"></i>
+                                    </span>
+                                    <span class="icon is-medium" style="float:right;">
+                                        <i class="devicon-html5-plain colored" style="font-size: 2rem"></i>
+                                    </span>
+                                    <span class="icon is-medium" style="float:right;">
+                                        <i class="devicon-css3-plain colored" style="font-size: 2rem"></i>
+                                    </span>
+                                </p>
+                            </div>
+                        </div>
+
+                        <div class="content">
+                            A food image classifier that uses convolutional neural networks
+                            <strong>(Keras framework)</strong>. Inspired from the app "SeeFood", as shown on HBO's
+                            Silicon Valley.
+                            Also has a web interface that can download images from any URL and classify them.
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="column">
+                <div class="card">
+                    <div class="card-image">
+                        <figure class="image is-1by1">
+                            <img src="static/imgs/Sentiment.jpg" alt="Placeholder image">
+                        </figure>
+                    </div>
+                    <div class="card-content">
+                        <div class="media">
+                            <div class="media-content">
+                                <p class="title is-4">Sentiment
+
+                                </p>
+                                <p class="subtitle is-6">Twitter Sentiment Analyzer
+                                    <br>
+                                    <br>
+                                    <a class="button is-link" href="https://github.com/ujjusinghania/SeeFood" target="_blank">Code</a>
+                                    <span class="icon is-medium" style="float:right;">
+                                        <i class="devicon-python-plain colored" style="font-size: 2rem"></i>
+                                    </span>
+                                    <span class="icon is-medium" style="float:right;">
+                                        <i class="devicon-html5-plain colored" style="font-size: 2rem"></i>
+                                    </span>
+                                    <span class="icon is-medium" style="float:right;">
+                                        <i class="devicon-css3-plain colored" style="font-size: 2rem"></i>
+                                    </span>
+                                </p>
+                            </div>
+                        </div>
+
+                        <div class="content">
+                            A twitter sentiment analyzer that used support vector machines and natural language
+                            processing
+                            <strong>(scikit-learn, and NLTK framework)</strong>. Used the word frequency map method to
+                            build vectors
+                            (after stopword removal, POS tagging and spelling correction) and the one versus all SVM
+                            method.
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="column">
+                <div class="card">
+                    <div class="card-image">
+                        <figure class="image is-1by1">
+                            <img src="static/imgs/TextClassifier.jpg" alt="Placeholder image">
+                        </figure>
+                    </div>
+                    <div class="card-content">
+                        <div class="media">
+                            <div class="media-content">
+                                <p class="title is-4">Document Classifier
+
+                                </p>
+                                <p class="subtitle is-6">Finance Document Categorizer
+                                    <br>
+                                    <br>
+                                    <a class="button is-link" href="https://github.com/ujjusinghania/TextClassifier"
+                                        target="_blank">Code</a>
+                                    <span class="icon is-medium" style="float:right;">
+                                        <i class="devicon-java-plain colored" style="font-size: 2rem"></i>
+                                    </span>
+                                </p>
+                            </div>
+                        </div>
+
+                        <div class="content">
+                            A document categorizer that uses support vector machines and neural networks
+                            <strong>(used Neuroph, and libsvm framework)</strong>. Used the word frequency map method
+                            to build vectors
+                            (after stopword removal, and special character removal) and the one versus all SVM method.
+                            On
+                            the other hand, a multi-perceptron neural network was used. Achieved a 100% accuracy on BBC
+                            and
+                            89% on the Heckyl Database.
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="column">
+                <div class="card">
+                    <div class="card-image">
+                        <figure class="image is-1by1">
+                            <img src="static/imgs/Stocks.jpg" alt="Placeholder image">
+                        </figure>
+                    </div>
+                    <div class="card-content">
+                        <div class="media">
+                            <div class="media-content">
+                                <p class="title is-4">Stock Portfolio Creator
+
+                                </p>
+                                <p class="subtitle is-6">Stock Market Analyzer
+                                    <br>
+                                    <br>
+                                    <a class="button is-link" href="https://github.com/ujjusinghania/TextClassifier"
+                                        target="_blank">Code</a>
+                                    <span class="icon is-medium" style="float:right;">
+                                        <i class="devicon-cplusplus-plain colored" style="font-size: 2rem"></i>
+                                    </span>
+                                </p>
+                            </div>
+                        </div>
+
+                        <div class="content">
+                            Built a portfolio generator that used machine learning to extrapolate past data and predict
+                            stock movement. Implemented the iterative gradient descent algorithm and linear algebra
+                            operations from scratch in <strong>C++</strong>. Back tested the application with data from
+                            the Bombay Stock
+                            Exchange - on average, <strong>the portfolio generated by the application comprised of 60%
+                                winners
+                                and 40% losers</strong>.
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <section class="hero is-light" id="mobileprojects">
+        <div class="hero-body">
+            <div class="container">
+                <h1 class="title">
+                    Mobile Applications
+                </h1>
+                <h2 class="subtitle">
+                    Applications made for iOS and/or Android.
+                </h2>
+            </div>
+        </div>
+    </section>
+    <div class="container is-fluid" style="padding: 32px;">
+        <div class="columns">
+            <div class="column">
+                <div class="card">
+                    <div class="card-image">
+                        <figure class="image is-square">
+                            <img src="static/imgs/VoidApp.png" alt="Placeholder image">
+                        </figure>
+                    </div>
+                    <div class="card-content">
+                        <div class="media">
+                            <div class="media-content">
+                                <p class="title is-4">Void
+                                </p>
+                                <p class="subtitle is-6">iOS Application
+                                    <br>
+                                    <br>
+                                    <a class="button is-info" href="https://github.com/ujjusinghania/Void" target="_blank">Code
+                                    </a>
+                                    <!-- <a class="button is-warning">App
+                                    </a> -->
+                                    <span class="icon is-medium" style="float:right;">
+                                        <i class="devicon-swift-plain colored" style="font-size: 2rem"></i>
+                                    </span>
+                                </p>
+                            </div>
+                        </div>
+
+                        <div class="content">
+                            Inspired by the presence of completely, empty spaces in outer space, Void is an app that
+                            allows people to vent out without
+                            guilt or the fear of social embarrassment.
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="column">
+                <div class="card">
+                    <div class="card-image">
+                        <figure class="image is-square">
+                            <img src="static/imgs/NavyDolphinIcon.png" alt="Placeholder image">
+                        </figure>
+                    </div>
+                    <div class="card-content">
+                        <div class="media">
+                            <div class="media-content">
+                                <p class="title is-4">Navy Dolphin
+                                </p>
+                                <p class="subtitle is-6">iOS Application
+                                    <br>
+                                    <br>
+                                    <a class="button is-info" href="https://github.com/ujjusinghania/Navy-Dolphin"
+                                        target="_blank">Code
+                                    </a>
+                                    <!-- <a class="button is-warning">App
+                                    </a> -->
+                                    <span class="icon is-medium" style="float:right;">
+                                        <i class="devicon-swift-plain colored" style="font-size: 2rem"></i>
+
+                                    </span>
+                                </p>
+                            </div>
+                        </div>
+
+                        <div class="content">
+                            Navy Dolphin aims to be the anti-thesis of the predatory 'Blue Whale' game that prompts
+                            innocent people to take their lives.
+                            Navy Dolphin focuses on positivity and aims to spread happiness by asking its users to
+                            perform
+                            one happy deed a day.
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="column">
+
+            </div>
+            <div class="column">
+
+            </div>
+        </div>
+    </div>
+
+    <section class="hero is-light" id="webprojects">
+        <div class="hero-body">
+            <div class="container">
+                <h1 class="title">
+                    Web Applications
+                </h1>
+                <h2 class="subtitle">
+                    Applications made for the web.
+                </h2>
+            </div>
+        </div>
+    </section>
+    <div class="container is-fluid" style="padding: 32px;">
+        <div class="columns">
+            <div class="column">
+                <div class="card">
+                    <div class="card-image">
+                        <figure class="image is-1by1">
+                            <img src="static/imgs/Abakkus.jpg" alt="Placeholder image">
+                        </figure>
+                    </div>
+                    <div class="card-content">
+                        <div class="media">
+                            <div class="media-content">
+                                <p class="title is-4">Abakkus Asset Manager LLC</p>
+                                <p class="subtitle is-6">Website and Blog
+                                    <br>
+                                    <br>
+                                    <a class="button is-success" href="https://abakkusinvest.com" target="_blank">Website</a>
+                                    <span class="icon is-medium" style="float:right;">
+                                        <i class="devicon-html5-plain colored" style="font-size: 2rem"></i>
+                                    </span>
+                                    <span class="icon is-medium" style="float:right;">
+                                        <i class="devicon-css3-plain colored" style="font-size: 2rem"></i>
+                                    </span>
+                                    <span class="icon is-medium" style="float:right;">
+                                        <i class="devicon-wordpress-plain colored" style="font-size: 2rem"></i>
+                                    </span>
+
+                                </p>
+                            </div>
+                        </div>
+
+                        <div class="content">
+                            Made the company website and blog for Abakkus Asset Manager LLC, a new finance company
+                            located in Mumbai, India. Also handled
+                            the creation of their company blog and did some technical consulting.
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="column">
+                <div class="card">
+                    <div class="card-image">
+                        <figure class="image is-1by1">
+                            <img src="static/imgs/Dispatch.jpg" alt="Placeholder image">
+                        </figure>
+                    </div>
+                    <div class="card-content">
+                        <div class="media">
+                            <div class="media-content">
+                                <p class="title is-4">Dispatch</p>
+                                <p class="subtitle is-6">Web Messaging Application
+                                    <br>
+                                    <br>
+                                    <a class="button is-link" href="https://github.com/ujjusinghania/Dispatch" target="_blank">Code</a>
+
+                                    <span class="icon is-medium" style="float:right;">
+                                        <i class="devicon-python-plain colored" style="font-size: 2rem"></i>
+                                    </span>
+                                    <span class="icon is-medium" style="float:right;">
+                                        <i class="devicon-mysql-plain colored" style="font-size: 2rem"></i>
+                                    </span>
+                                    <span class="icon is-medium" style="float:right;">
+                                        <i class="devicon-html5-plain colored" style="font-size: 2rem"></i>
+                                    </span>
+                                    <span class="icon is-medium" style="float:right;">
+                                        <i class="devicon-css3-plain colored" style="font-size: 2rem"></i>
+                                    </span>
+                                </p>
+                            </div>
+                        </div>
+
+                        <div class="content" id="testing">
+                            A messaging application I built with my co-peers as a project for my databases class. It
+                            has a number of features like a
+                            personalized color picker, a versatile content viewer, and ability to have custom
+                            groups. The
+                            front-end was created using HTML, CSS and Python. The back-end was a MySQL database.
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="column">
+            </div>
+            <div class="column">
+            </div>
+        </div>
+    </div>
+
+</body>
+
+<footer class="footer">
+    <div class="container">
+        <div class="content has-text-centered">
+            <p>
+                Made by Ujjwal Singhania. Images from
+                <a href="unsplash.com">Unsplash</a>
+            </p>
+        </div>
+    </div>
+</footer>
+
+<script>
+
+    function getDarkMode() {
+        var now = new Date();
+        if (now.getHours() > 18 || now.getHours() < 6) {
+            $(".hero").removeClass("is-light");
+            $(".hero").addClass("is-dark");
+            $(".navbar").removeClass("is-light");
+            $(".navbar").addClass("is-dark");
+            $(".card").css("background-color", "#4d4d4d")
+            $("p").css("color", "white");
+            $("strong").css("color", "white");
+            $(".content").css("color", "white");
+            $("span").removeClass("icon-color");
+            $("body").css("background-color", "#676767")
+            $("footer").css("background-color", "#4d4d4d")
+        }
+    }
+
+    $(document).ready(function () {
+        getDarkMode();
+    });
+
+    $("#seefood-modal-activate").click(function () {
+        $("#seefood-modal").addClass("is-active");
+    });
+
+    $("#seefood-modal-cancel").click(function () {
+        $("#seefood-modal").removeClass("is-active");
+    });
+
+    $(".navbar-burger").click(function () {
+        $(".navbar-burger").toggleClass("is-active");
+        $(".navbar-menu").toggleClass("is-active");
+    });
+
+</script>
+
+</html>

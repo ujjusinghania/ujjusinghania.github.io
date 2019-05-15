@@ -1,12 +1,221 @@
-<!DOCTYPE html>
 <html>
-  <head>
-  <script src="http://d3js.org/d3.v3.min.js" charset="utf-8"></script>
-  <script type="text/javascript" src="drawPointsBuggy.js"></script>
-  </head>
-  <body>
-    <button onclick="kdDriver()">Create KD Rectangles</button>
-    <button onclick="randomizePoints()">Randomize Points</button>
-    <script src="drawPointsBuggy.js"></script>
-  </body>
+<header>
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-84265081-3"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag() { dataLayer.push(arguments); }
+        gtag('js', new Date());
+
+        gtag('config', 'UA-84265081-3');
+    </script>
+
+
+    <meta charset="UTF-8" />
+    <title>Ujjwal's Portfolio Website - About Me</title>
+    <link type="text/css" rel="stylesheet" href="static/styles/bulma.css" />
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.5.0/css/solid.css" integrity="sha384-rdyFrfAIC05c5ph7BKz3l5NG5yEottvO/DQ0dCrwD8gzeQDjYBHNr1ucUpQuljos"
+        crossorigin="anonymous">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.5.0/css/regular.css" integrity="sha384-z3ccjLyn+akM2DtvRQCXJwvT5bGZsspS4uptQKNXNg778nyzvdMqiGcqHVGiAUyY"
+        crossorigin="anonymous">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.5.0/css/brands.css" integrity="sha384-QT2Z8ljl3UupqMtQNmPyhSPO/d5qbrzWmFxJqmY7tqoTuT2YrQLEqzvVOP2cT5XW"
+        crossorigin="anonymous">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.5.0/css/fontawesome.css" integrity="sha384-u5J7JghGz0qUrmEsWzBQkfvc8nK3fUT7DCaQzNQ+q4oEXhGSx+P2OqjWsfIRB8QT"
+        crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdn.rawgit.com/konpa/devicon/df6431e323547add1b4cf45992913f15286456d3/devicon.min.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script src="static/js/jquery-3.3.1.slim.js"></script>
+</header>
+<style>
+    .column {
+        display: flex;
+    }
+
+    .icon-color {
+        color: black;
+    }
+</style>
+
+<body>
+    <nav class="navbar is-transparent is-light is-fixed-top">
+        <div class="navbar-brand">
+            <a class="navbar-item" href="https://github.com/ujjusinghania" target="_blank">
+                <span class="icon is-medium icon-color" style="float:right;">
+                    <i class="fa-2x fab fa-github-square"></i>
+                </span>
+            </a>
+            <a class="navbar-item" href="https://twitter.com/ujjusinghania" target="_blank">
+                <span class="icon is-medium icon-color" style="float:right;">
+                    <i class="fa-2x fab fa-twitter-square"></i>
+                </span>
+            </a>
+            <a class="navbar-item" href="https://www.linkedin.com/in/ujjwal-s-51156990/" target="_blank">
+                <span class="icon is-medium icon-color" style="float:right;">
+                    <i class="fa-2x fab fa-linkedin"></i>
+                </span>
+            </a>
+            <div class="navbar-burger burger nav-toggle" data-target="navbarExampleTransparentExample">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </div>
+
+        <div id="navbarExampleTransparentExample" class="navbar-menu">
+            <div class="navbar-end">
+                <a class="navbar-item" href="https://ujjusinghania.github.io/">
+                    About Me
+                </a>
+                <a class="navbar-item" href="https://ujjusinghania.github.io/projects">
+                    Projects
+                </a>
+                <a class="navbar-item" href="https://drive.google.com/file/d/1weML6QgSUXp1N8o55htLXhrF7cPfhVAt/view?usp=sharing"
+                    target="_blank">
+                    Resume
+                </a>
+            </div>
+        </div>
+    </nav>
+
+    <section class="hero is-light" id="aboutme">
+        <div class="hero-body" style="margin-top: 5%">
+            <div class="container">
+                <h1 class="title">
+                    About Me
+                </h1>
+            </div>
+        </div>
+    </section>
+    <div class="container is-fluid" style="padding: 32px;">
+        <div class="tile is-ancestor">
+            <div class="tile is-vertical is-8">
+                <div class="tile">
+                    <div class="tile is-parent">
+                        <article class="tile is-child notification is-light">
+                            <figure class="image is-square">
+                                <img src="static/imgs/Profile.jpg">
+                            </figure>
+                        </article>
+                    </div>
+                    <div class="tile is-parent is-vertical">
+                        <article class="tile is-child notification is-light">
+                            <p class="title">Currently...</p>
+                            <p class="subtitle">A senior at New York University, majoring in Computer Science</p>
+                        </article>
+                        <article class="tile is-child notification is-light">
+                            <p class="title">Can code in...</p>
+                            <span class="icon is-medium">
+                                <i class="devicon-python-plain colored" style="font-size: 2rem"></i>
+                            </span>
+                            <span class="icon is-medium">
+                                <i class="devicon-java-plain colored" style="font-size: 2rem"></i>
+                            </span>
+                            <span class="icon is-medium">
+                                <i class="devicon-swift-plain colored" style="font-size: 2rem"></i>
+                            </span>
+                            <span class="icon is-medium">
+                                <i class="devicon-cplusplus-plain colored" style="font-size: 2rem"></i>
+                            </span>
+                            <span class="icon is-medium">
+                                <i class="devicon-mysql-plain colored" style="font-size: 2rem"></i>
+                            </span>
+                            <span class="icon is-medium">
+                                <i class="devicon-html5-plain colored" style="font-size: 2rem"></i>
+                            </span>
+                            <span class="icon is-medium">
+                                <i class="devicon-css3-plain colored" style="font-size: 2rem"></i>
+                            </span>
+                            <span class="icon is-medium">
+                                <i class="devicon-javascript-plain colored" style="font-size: 2rem"></i>
+                            </span>
+                        </article>
+                        <article class="tile is-child notification is-light">
+                            <p class="title">Currently working on...</p>
+                            <p class="subtitle">Hugo, an educational chatbot that aims to automate the answering of
+                                student queries that are elementary or similar to previously answered queries.</p>
+                        </article>
+                    </div>
+
+                </div>
+            </div>
+            <div class="tile is-parent">
+                <article class="tile is-child notification is-light">
+                    <div class="content">
+                        <p class="title">About Me</p>
+                        <!-- <p class="subtitle">With even more content</p> -->
+                        <div class="content">
+                            <p class="subtitle">
+                                My name is Ujjwal Singhania. My avid interest in technology and its potential rests in
+                                my childhood. Having learned
+                                to
+                                switch on a computer when I was 2 years old and spent hours marveling at the moving
+                                character sprite
+                                in Pokémon Leaf Green when I was 6, I can say that I have been surrounded by technology
+                                all
+                                my life. I believe that imagination and focus, in conjunction, can solve all of the
+                                world's
+                                problems. Comfort zones bore me and I tend to enjoy situations that force me to adapt
+                                and
+                                to learn. A self-proclaimed "learn-it-all".
+                            </p>
+                        </div>
+                    </div>
+                </article>
+            </div>
+        </div>
+    </div>
+
+</body>
+
+<footer class="footer">
+    <div class="container">
+        <div class="content has-text-centered">
+            <p>
+                Made by Ujjwal Singhania. Images from
+                <a href="unsplash.com">Unsplash</a>
+            </p>
+        </div>
+    </div>
+</footer>
+
+<script>
+
+    function getDarkMode() {
+        var now = new Date();
+        if (now.getHours() > 18 || now.getHours() < 6) {
+            $(".hero").removeClass("is-light");
+            $(".hero").addClass("is-dark");
+            $(".tile").removeClass("is-light");
+            $(".tile").addClass("is-dark");
+            $(".navbar").removeClass("is-light");
+            $(".navbar").addClass("is-dark");
+            $(".card").css("background-color", "#4d4d4d")
+            $("p").css("color", "white");
+            $("strong").css("color", "white");
+            $(".content").css("color", "white");
+            $("span").removeClass("icon-color");
+            $("body").css("background-color", "#676767")
+            $("footer").css("background-color", "#4d4d4d")
+        }
+    }
+
+    $(document).ready(function () {
+        getDarkMode();
+    });
+
+    $("#seefood-modal-activate").click(function () {
+        $("#seefood-modal").addClass("is-active");
+    });
+
+    $("#seefood-modal-cancel").click(function () {
+        $("#seefood-modal").removeClass("is-active");
+    });
+
+    $(".navbar-burger").click(function () {
+        $(".navbar-burger").toggleClass("is-active");
+        $(".navbar-menu").toggleClass("is-active");
+    });
+
+</script>
+
 </html>
