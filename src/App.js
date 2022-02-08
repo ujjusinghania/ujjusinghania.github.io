@@ -1,25 +1,15 @@
-import logo from './logo.svg';
-import './App.css';
+import { Grommet } from "grommet";
+import { grommet } from 'grommet/themes';
+import Routes from './Routes.js';
+import './index.css';
 
 function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
+	return (
+		<Grommet theme={grommet} >
+			<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Varela Round" />
+			<Routes />
+		</Grommet>
+	);
 }
 
 export default App;
