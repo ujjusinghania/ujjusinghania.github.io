@@ -47,13 +47,13 @@ class Navbar extends Component {
 					/>
 					<Avatar src="https://media-exp1.licdn.com/dms/image/C5603AQFbvhHYFOcl5w/profile-displayphoto-shrink_800_800/0/1595014478394?e=1636588800&v=beta&t=tQuQWrJTLtAJC32y4ZQDo-gvDLbfvFe-qVyW9THFqu4" />
 					<Box pad="xsmall" justify="center">
-						<Anchor color="black" label="about me" href="/" />
+						<Anchor color="black" label="about me" href="#/" />
 					</Box>
 					<Box pad="xsmall" justify="center">
-						<Anchor color="black"  label="projects" href="/projects" />
+						<Anchor color="black"  label="projects" href="#/projects" />
 					</Box>
 					<Box pad="xsmall" justify="center">
-						<Anchor color="black" label="resume" href="/resume" />
+						<Anchor color="black" label="resume" href="#/resume" />
 					</Box>
 				</Nav>
 			</Header>
