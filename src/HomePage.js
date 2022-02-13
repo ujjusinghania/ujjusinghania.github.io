@@ -13,16 +13,16 @@ class HomePage extends Component {
 		return (
 			<div>
 				<Navbar />
-				<Main pad="large" gap="large">
-					<Box direction="row" justify="center" gap="medium">
+				<Main pad="large" gap="large" style={{paddingBottom: "10vh"}}>
+					<Box direction="row-responsive" justify="center" gap="xlarge">
 						<Box height="medium" width="medium">
 							<Image fit="cover" src={profile} />
 						</Box>
 						<Box>
-							<Heading margin="medium" level="3">
+							<Heading level="3">
 								Hi, I am Ujjwal!
 							</Heading>
-							<Paragraph margin="medium">
+							<Paragraph>
 								My avid interest in technology and its potential rests in my
 								childhood. Having learned to switch on a computer when I was 2
 								years old and spending hours marveling at the moving character
