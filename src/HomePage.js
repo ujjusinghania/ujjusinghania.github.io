@@ -13,16 +13,17 @@ class HomePage extends Component {
 		return (
 			<div>
 				<Navbar />
-				<Main pad="large" gap="large" style={{paddingBottom: "10vh"}}>
+				<Main pad="large" gap="large" style={{ paddingBottom: "10vh" }}>
 					<Box direction="row-responsive" justify="center" gap="xlarge">
 						<Box height="medium" width="medium">
 							<Image fit="cover" src={profile} />
 						</Box>
 						<Box>
-							<Heading level="3">
-								Hi, I am Ujjwal!
-							</Heading>
 							<Paragraph>
+								<Heading level="3">
+									Hi, I am Ujjwal!
+									<Heading level="5">nyu '19 🗽 | uc berkeley '20 🌉 | full-stack engineer at amazon 📦</Heading>
+								</Heading>
 								My avid interest in technology and its potential rests in my
 								childhood. Having learned to switch on a computer when I was 2
 								years old and spending hours marveling at the moving character
@@ -30,8 +31,7 @@ class HomePage extends Component {
 								surrounded by technology all my life. I believe that imagination
 								and focus, in conjunction, can solve all of the world's
 								problems. Comfort zones bore me and I tend to enjoy situations
-								that force me to adapt and to learn. A self-proclaimed
-								"learn-it-all".
+								that force me to adapt and to learn.
 							</Paragraph>
 						</Box>
 					</Box>
@@ -49,11 +49,13 @@ class HomePage extends Component {
 						/>
 					</Box>
 				</Main>
-				<PageFooter style={{
-					position: "fixed",
-					bottom: "0",
-					width: "100%"
-				}}/>
+				<PageFooter
+					style={{
+						position: "fixed",
+						bottom: "0",
+						width: "100%",
+					}}
+				/>
 			</div>
 		);
 	}
