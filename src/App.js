@@ -1,14 +1,17 @@
-import { Grommet } from "grommet";
-import { grommet } from 'grommet/themes';
-import Routes from './Routes.js';
-import './index.css';
+import { NextUIProvider } from "@nextui-org/react";
+import "./App.css";
+import { createTheme } from "@nextui-org/react"
+import PortfolioRoutes from "./PortfolioRoutes";
+
+const darkTheme = createTheme({
+	type: 'dark'
+  })
 
 function App() {
 	return (
-		<Grommet theme={grommet} >
-			<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Varela Round" />
-			<Routes />
-		</Grommet>
+		<NextUIProvider theme={darkTheme}>
+			<PortfolioRoutes />
+		</NextUIProvider>
 	);
 }
 
