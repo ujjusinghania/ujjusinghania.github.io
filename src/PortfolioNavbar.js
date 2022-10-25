@@ -43,7 +43,7 @@ const PortfolioNavbar = () => {
 							css={{
 								minWidth: "100%",
 							}}
-							href="#"
+							href={item.href}
 						>
 							{item.text}
 						</Link>

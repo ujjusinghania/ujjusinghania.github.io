@@ -10,7 +10,7 @@ const HomePage = () => {
 			<Spacer x={4} />
 			<Container fluid>
 				<Grid.Container gap={3} justify="center">
-					<Grid xs={10} sm={6} md={4}>
+					<Grid xs={12} sm={6} md={4}>
 						<Card>
 							<Card.Image
 								autoResize={true}
@@ -20,7 +20,7 @@ const HomePage = () => {
 							/>
 						</Card>
 					</Grid>
-					<Grid xs={10} sm={6} md={4}>
+					<Grid xs={12} sm={6} md={4}>
 						<Card css={{ padding: "24px" }}>
 							<Card.Header>
 								<Grid.Container>

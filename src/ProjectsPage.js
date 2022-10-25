@@ -19,7 +19,7 @@ const ProjectsPage = () => {
 						<Grid.Container gap={3}>
 							{PortfolioProjectsList["ml_projects"].map((projectAttributes) => {
 								return (
-									<Grid xs={10} sm={6} md={3}>
+									<Grid xs={12} sm={6} md={4}>
 										<Card isPressable variant="bordered">
 											<Card.Header>
 												<Text b>{projectAttributes.projectName}</Text>
@@ -49,7 +49,7 @@ const ProjectsPage = () => {
 						<Grid.Container gap={3}>
 							{PortfolioProjectsList["mobile_apps"].map((projectAttributes) => {
 								return (
-									<Grid xs={10} sm={6} md={3}>
+									<Grid xs={10} sm={6} md={4}>
 										<Card isPressable variant="bordered">
 											<Card.Header>
 												<Text b>{projectAttributes.projectName}</Text>
@@ -79,7 +79,7 @@ const ProjectsPage = () => {
 						<Grid.Container gap={3}>
 							{PortfolioProjectsList["web_apps"].map((projectAttributes) => {
 								return (
-									<Grid xs={10} sm={6} md={3}>
+									<Grid xs={10} sm={6} md={4}>
 										<Card isPressable variant="bordered">
 											<Card.Header>
 												<Text b>{projectAttributes.projectName}</Text>
