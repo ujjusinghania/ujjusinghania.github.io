@@ -7,8 +7,14 @@ import {
 	Text,
 } from "@nextui-org/react";
 import PortfolioNavbar from "./PortfolioNavbar";
+import { useEffect } from "react";
+
 const PortfolioProjectsList = require("./PortfolioProjectsList.json");
 const ProjectsPage = () => {
+	useEffect(() => {
+		document.title = "Ujjwal's Portfolio Website - Projects"
+	}, []);
+
 	return (
 		<>
 			<PortfolioNavbar />
@@ -19,7 +25,7 @@ const ProjectsPage = () => {
 						<Grid.Container gap={3}>
 							{PortfolioProjectsList["ml_projects"].map((projectAttributes) => {
 								return (
-									<Grid xs={12} sm={6} md={4}>
+									<Grid xs={10} sm={6} md={3}>
 										<Card isPressable variant="bordered">
 											<Card.Header>
 												<Text b>{projectAttributes.projectName}</Text>
@@ -49,7 +55,7 @@ const ProjectsPage = () => {
 						<Grid.Container gap={3}>
 							{PortfolioProjectsList["mobile_apps"].map((projectAttributes) => {
 								return (
-									<Grid xs={10} sm={6} md={4}>
+									<Grid xs={10} sm={6} md={3}>
 										<Card isPressable variant="bordered">
 											<Card.Header>
 												<Text b>{projectAttributes.projectName}</Text>
@@ -79,7 +85,7 @@ const ProjectsPage = () => {
 						<Grid.Container gap={3}>
 							{PortfolioProjectsList["web_apps"].map((projectAttributes) => {
 								return (
-									<Grid xs={10} sm={6} md={4}>
+									<Grid xs={10} sm={6} md={3}>
 										<Card isPressable variant="bordered">
 											<Card.Header>
 												<Text b>{projectAttributes.projectName}</Text>

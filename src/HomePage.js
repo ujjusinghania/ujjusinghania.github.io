@@ -2,15 +2,20 @@ import { Button, Container, Spacer } from "@nextui-org/react";
 import PortfolioNavbar from "./PortfolioNavbar";
 import { Grid, Card, Text } from "@nextui-org/react";
 import profile from "./imgs/profile.png";
+import { useEffect } from "react";
 
 const HomePage = () => {
+	useEffect(() => {
+		document.title = "Ujjwal's Portfolio Website"
+	}, []);
+
 	return (
 		<>
 			<PortfolioNavbar />
 			<Spacer x={4} />
 			<Container fluid>
 				<Grid.Container gap={3} justify="center">
-					<Grid xs={12} sm={6} md={4}>
+					<Grid xs={10} sm={6} md={4}>
 						<Card>
 							<Card.Image
 								autoResize={true}
@@ -20,7 +25,7 @@ const HomePage = () => {
 							/>
 						</Card>
 					</Grid>
-					<Grid xs={12} sm={6} md={4}>
+					<Grid xs={10} sm={6} md={4}>
 						<Card css={{ padding: "24px" }}>
 							<Card.Header>
 								<Grid.Container>
